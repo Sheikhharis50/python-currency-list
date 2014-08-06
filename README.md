@@ -1,0 +1,1 @@
+Dictionary of all currencies in Python and Django
