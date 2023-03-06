@@ -13,6 +13,12 @@ class ModelName:
         default=Currency.USD,
     )
     ...
+    
+Notes
+
+- `auto()` method will give you str value such as: AFN = "AFN", _("Afghanistan Afghani")
+- To use integer values replace:
+    `class Currency(models.TextChoices):` => `class Currency(models.IntegerChoices):`
 """
 
 class Currency(models.TextChoices):
