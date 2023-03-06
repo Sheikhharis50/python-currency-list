@@ -3,6 +3,17 @@ from enum import auto
 from django.db import models
 from django.utils.translation import gettext as _
 
+"""
+Usage:
+class ModelName:
+    ...
+    currency = models.CharField(
+        max_length=255,
+        choices=Currency.choices,
+        default=Currency.USD,
+    )
+    ...
+"""
 
 class Currency(models.TextChoices):
     ALL = auto(), _("Albania Lek")
