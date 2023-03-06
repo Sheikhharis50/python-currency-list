@@ -4,7 +4,7 @@ from django.db import models
 from django.utils.translation import gettext as _
 
 
-class Currency(models.TextField):
+class Currency(models.TextChoices):
     ALL = auto(), _("Albania Lek")
     AFN = auto(), _("Afghanistan Afghani")
     ARS = auto(), _("Argentina Peso")
